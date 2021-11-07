@@ -54,4 +54,18 @@ h1 {
     .flexContainer>.webDevelopment {
         width: 100%;
     }
+    .workGrid{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projectInfo{
+        padding: 10px;
+        text-align: center;
+    }
+    .projectPicture{
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+
 }
