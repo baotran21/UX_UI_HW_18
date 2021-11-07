@@ -1,50 +1,57 @@
 /*css style for my skills*/
+h1 {
+    text-align: center;
+}
 .flexContainer {
+    padding: 10px;
     display: flex;
     flex-direction: row;
 }
-.flexContainer > .userResearch {
+
+.flexContainer>.userResearch {
+    padding: 10px;
     width: 33%;
 }
-.flexContainer > .interfaceDesign {
+
+.flexContainer>.interfaceDesign {
+    padding: 10px;
     width: 33%;
 }
-.flexContainer > .webDevelopment {
+
+.flexContainer>.webDevelopment {
+    padding: 10px;
     width: 33%;
 }
-/*css style for my works*/ 
-.workGrid {
-display: grid;
+.workGrid{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
-.project1 {
-    grid-area: auto;
-   float: right;
+.projectInfo{
+    padding: 10px;
+    text-align: left;
 }
-
-.project2 {
-    grid-area: auto;
-    float: right;
+.projectPicture{
+    padding: 10px;
+    width: 400px;
+    height: 200px;
 }
-
-.project3 {
-    grid-area: auto;
-    float: right;
-}
-
-
-
 /*code an mobile media query to make your design responsice for mobile deviceds*/
-@media only screen and (max-width:600){
+@media only screen and (max-width:600) {
     .flexContainer {
         display: flex;
         flex-direction: column;
     }
-    .flexContainer > .userResearch {
+
+    .flexContainer>.userResearch {
         width: 100%;
     }
-    .flexContainer > .interfaceDesign {
+
+    .flexContainer>.interfaceDesign {
         width: 100%;
     }
-    .flexContainer > .webDevelopment {
+
+    .flexContainer>.webDevelopment {
         width: 100%;
-}} 
+    }
+}
