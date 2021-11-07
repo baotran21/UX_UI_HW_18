@@ -1,5 +1,7 @@
+/*css style for my skills*/
 .flexContainer {
     display: flex;
+    flex-direction: row;
 }
 .flexContainer > .userResearch {
     width: 33%;
@@ -10,27 +12,39 @@
 .flexContainer > .webDevelopment {
     width: 33%;
 }
+/*css style for my works*/ 
 .workGrid {
 display: grid;
 }
 .project1 {
     grid-area: auto;
+   float: right;
 }
-.grid-container{ 
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
+
 .project2 {
     grid-area: auto;
+    float: right;
 }
-.grid-container{ 
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
+
 .project3 {
     grid-area: auto;
+    float: right;
 }
-.grid-container{ 
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-}
+
+
+
+/*code an mobile media query to make your design responsice for mobile deviceds*/
+@media only screen and (max-width:600){
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .flexContainer > .userResearch {
+        width: 100%;
+    }
+    .flexContainer > .interfaceDesign {
+        width: 100%;
+    }
+    .flexContainer > .webDevelopment {
+        width: 100%;
+}} 
